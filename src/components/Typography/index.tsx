@@ -5,7 +5,7 @@ export const Typography = ({
 }) => {
   return (
     <div data-testid="typography-id">
-      <h1>{text}</h1>
+      <h1>{text ?? "alo"}</h1>
     </div>
   );
 };
