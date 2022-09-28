@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 module.exports = plop => {
     plop.setGenerator('component', {
         description: 'Create a component',
@@ -28,7 +27,7 @@ module.exports = plop => {
             {
                 path: '../src/components/index.ts',
                 pattern: /(\/\/ new components by plop -> don't edit this)/g,
-                template: "export * from './{{pascalCase name}}'\n$1",
+                template: `export * from "./{{pascalCase name}}";\n$1`,
                 type: 'modify',
             },
         ],
