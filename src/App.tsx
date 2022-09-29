@@ -1,10 +1,12 @@
+import { NextUIProvider } from "@nextui-org/react";
 import { Typography } from "./components";
+import theme from "./theme/theme";
 
 function App() {
   return (
-    <div>
+    <NextUIProvider theme={theme}>
       <Typography text="something" />
-    </div>
+    </NextUIProvider>
   );
 }
 
