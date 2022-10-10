@@ -5,7 +5,7 @@ import Button from ".";
 
 describe("<Button />", () => {
   it("should render Button component", () => {
-    render(<Button />);
+    render(<Button>Button</Button>);
     expect(screen.getByTestId("button-id")).toBeDefined();
   });
 });
